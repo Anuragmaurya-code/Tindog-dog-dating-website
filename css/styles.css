@@ -24,6 +24,13 @@ p {
 
 .big-heading {
   font-size: 3.5rem;
+  text-transform: capitalize;
+  color: #ffffffe8;
+
+}
+
+.big-heading span {
+  font-size: 3.7rem;
 }
 
 
@@ -37,9 +44,15 @@ p {
 .coloured-section {
   background-color: #ff4c68;
   color: #fff;
+
+}
+
+.newheight {
+  min-height: 100vh;
 }
 
 .white-section {
+  position: relative;
   background-color: #fff;
 }
 
@@ -60,7 +73,6 @@ p {
 /* Navbar  */
 .navbar-brand {
   font-family: 'Ubuntu', sans-serif;
-  ;
   font-size: 2.5rem;
   color: rgb(31, 31, 31);
   transition: all 0.3s ease;
@@ -78,6 +90,13 @@ p {
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  color: rgba(240, 240, 240, 0.852);
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  transition: all 0.3s ease;
+  color: #1d1d1d;
 }
 
 
@@ -90,6 +109,7 @@ p {
 /* Title Image */
 .dog-img {
   position: relative;
+  z-index: 1;
 }
 
 .title-image {
@@ -101,23 +121,39 @@ p {
 
 /* Fetaures */
 #features {
-  position: relative;
+  z-index: 2;
+}
 
-
+.features_boxes {
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-box {
-  padding: 4.2%;
+  padding: 4%;
+  margin: 25px 15px;
+  height: 340px;
+  border-radius: 10px;
+  border-top: 1px solid rgb(218, 217, 217);
+  background: linear-gradient(to bottom, rgb(255, 245, 245), rgb(253, 184, 184));
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.06);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .features-heading {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
 }
 
 .features-text {
-  color: #8f8f8f;
+  color: #585858;
 }
 
 .features-icon {
@@ -200,6 +236,32 @@ p {
   margin: 20px 10px;
 }
 
+.card {
+  height: 570px;
+}
+
+.premium {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 0.3s ease;
+  background: linear-gradient(to bottom, rgb(140, 208, 251), aqua);
+  border: none;
+  outline: none;
+}
+
+.premium:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.06);
+}
+
+.premium .pricing-text {
+  color: royalblue;
+}
+
+
+
+.premium .card-body .active {
+  color: black;
+}
 
 
 /*for smaller screen size */
@@ -221,5 +283,22 @@ p {
 
   #title {
     text-align: center;
+  }
+}
+
+/*for smaller screen size */
+@media (min-width: 1285px) {
+  .features_boxes {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card {
+    height: 440px;
+  }
+  .features-heading {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
   }
 }
