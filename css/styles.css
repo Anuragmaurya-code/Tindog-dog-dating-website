@@ -23,15 +23,12 @@ p {
 /* Heading */
 
 .big-heading {
-  font-size: 3.5rem;
+  font-size: 5.5rem;
   text-transform: capitalize;
   color: #ffffffe8;
 
 }
 
-.big-heading span {
-  font-size: 3.7rem;
-}
 
 
 .container-fluid {
@@ -103,6 +100,8 @@ p {
 /* Download button */
 .download-button {
   margin: 5% 3% 5% 0;
+  font-size: 2.5em;
+  padding: 15px 25px;
 }
 
 
@@ -135,7 +134,7 @@ p {
   height: 340px;
   border-radius: 10px;
   border-top: 1px solid rgb(218, 217, 217);
-  background: linear-gradient(to bottom, rgb(255, 245, 245), rgb(253, 184, 184));
+  background: linear-gradient(to bottom, rgb(255, 245, 245), rgb(252, 109, 171));
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   transition: all 0.3s ease;
 }
@@ -153,7 +152,7 @@ p {
 }
 
 .features-text {
-  color: #585858;
+  color: #3a3a3a;
 }
 
 .features-icon {
@@ -296,9 +295,26 @@ p {
   .card {
     height: 440px;
   }
+
   .features-heading {
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
+  }
+
+  .newwidth {
+    width: 80%;
+    margin: auto;
+  }
+
+  .big-heading {
+    font-size: 3.5rem;
+  }
+
+  /* Download button */
+  .download-button {
+    margin: 5% 3% 5% 0;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 }
